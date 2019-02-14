@@ -27,7 +27,7 @@ describe('TEST: character', () => {
       health: 0,
     });
 
-    expect(character.levelUp()).toThrow('нельзя повысить левел умершего');
+    expect(() => character.levelUp()).toThrow();
   });
 
   test('health less than zero', () => {
@@ -38,6 +38,6 @@ describe('TEST: character', () => {
       health: -60,
     });
 
-    expect(character.levelUp()).toThrow('нельзя повысить левел умершего');
+    expect(() => character.levelUp()).toThrow();
   });
 });
