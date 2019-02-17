@@ -12,7 +12,7 @@ describe('TEST: character', () => {
       level: 4,
       defence: 48,
       attack: 30,
-      health: 400,
+      health: 300,
     };
 
     expect(character.levelUp()).toEqual(expected);
