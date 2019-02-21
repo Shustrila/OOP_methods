@@ -6,13 +6,13 @@ describe('TEST: character', () => {
       level: 3,
       defence: 40,
       attack: 25,
-      health: 300,
+      health: 60,
     });
     const expected = {
       level: 4,
       defence: 48,
       attack: 30,
-      health: 400,
+      health: 100,
     };
 
     expect(character.levelUp()).toEqual(expected);
